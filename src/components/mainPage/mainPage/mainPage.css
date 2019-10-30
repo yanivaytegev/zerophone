@@ -1,0 +1,332 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+}
+  
+header.masthead {
+    position: relative;
+    background-image: url('../../../photos/zero.jpg');
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+  
+header.masthead .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+  
+
+  
+@media (min-width: 768px) {
+  header.masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    color : white;
+      font-size: 3rem;
+  }
+}
+    
+.profile-card {
+  position: relative;
+}
+.profile-card img {
+  box-shadow: 0 0 33px rgba(51, 51, 51, 0.3);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.profile-card:hover .profile-card__info {
+  top: 0;
+}
+.profile-card:hover .profile-card__info p {
+  opacity: 1;
+  color:white;
+}
+.profile-card__overlay {
+  overflow: hidden;
+}
+.profile-card__info h1 {
+color : white;
+font-style: italic;
+}
+
+.profile-card__info {
+  position: absolute;
+  top: calc(100% - 100px);
+  right: 0;
+  bottom: 4px;
+  left: 0;
+  z-index: 1;
+  padding: 0 20px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(#0096d8 20%, rgba(0, 150, 216, 0.7));
+  transition: 600ms top cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.profile-card__info:before {
+  content: '';
+  background: #0096d8;
+  height: 50px;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  transform: skewY(1.5deg);
+  transform-origin: 0%;
+  z-index: -1;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.profile-card__info p {
+  text-align: left;
+  opacity: 0;
+  transition: 600ms opacity;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.btn1 {
+  color: rgb(198, 212, 216); 
+  background: transparent; 
+  border: 2px solid rgb(198, 212, 216);
+  border-radius: 6px; 
+  border: none;  
+  color: white;  
+  padding: 16px 32px;
+  text-align: center;  
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px;      
+  -webkit-transition-duration: 0.4s; /* Safari */      
+  transition-duration: 0.4s;      
+  cursor: pointer;      
+  text-decoration: none;      
+  text-transform: uppercase;
+  position: absolute;
+  margin-left: 17px;
+}
+.btn1{      
+  background-color: white;       
+  color: black;       
+  border: 2px solid #0096d8;
+}
+.btn1:hover {  
+  background-color: #0096d8;      
+  color: white; 
+}
+
+
+@media (max-width: 767px) {
+  .profile-card{
+    width: 70%;
+    margin: 15px auto;
+  }
+}
+
+
+
+.popup {  
+  position: fixed;  
+  width: 100%;  
+  height: 100%;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  margin: auto;  
+  background-color: rgba(0,0,0, 0.5); 
+  z-index: 1000; 
+}  
+.popup\_inner {  
+  position: absolute;  
+  left: 25%;  
+  right: 25%;  
+  top: 25%;  
+  bottom: 25%;  
+  margin: auto;  
+  border-radius: 20px;  
+  background: white;  
+}
+
+
+
+
+
+
+.card-head {
+  position: relative;
+  height: 252px;
+  background: #fa782e;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #d7d7d7 8%, #eee9e9 83%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #d7d7d7 8%, #eee9e9 83%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #d7d7d7 8%, #eee9e9 83%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#d7d7d7", endColorstr="#eee9e9", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border-radius: 25px 25px 0 0;
+}
+.card-logo {
+  height: 17%;
+  width: 30%;
+  margin: 20px;
+}
+.product-img {
+  position: absolute;
+  height: 270px;
+  width: 240px;
+  left: 0;
+  margin-top: 16px;
+  margin-left: 130px;
+}
+.product-detail {
+  padding: 0 20px;
+  font-size: 10px;
+  color: #646363;
+}
+.product-detail h2 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: px;
+  text-transform: uppercase;
+}
+.back-text {
+  display: inline-block;
+  font-size: 124px;
+  font-weight: 900;
+  margin-left: -7px;
+  margin-top: -15px;
+  opacity: 0.1;
+}
+.card-body {
+  height: 255px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+}
+.product-title {
+  padding: 20px 20px 5px 20px;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.product-title b {
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+.badge {
+  position: relative;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  background: #4885ed;
+  padding: 2px 5px;
+  border-radius: 4px;
+  top: -2px;
+  margin-left: 5px;
+}
+.product-caption {
+  display: block;
+  padding: 0 20px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.product-rating {
+  padding: 0 20px;
+  font-size: 11px;
+}
+.product-rating i.yellow {
+  color: #f4c20d;
+}
+.product-rating i.ash {
+  color: #acacab;
+}
+.product-size h4 {
+  font-size: 11px;
+  padding: 0 21px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.ul-size {
+  margin-left: 15px;
+}
+.ul-size li {
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+}
+.ul-size li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 23px;
+  color: #000;
+}
+.ul-size li a.active {
+  background: #f35e3d;
+  color: #fff;
+}
+.product-size:before, .product-size:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.quantity input {
+  border-radius: 7px;
+  width: 45px;
+  height: 25px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 5px 20px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 25px;
+  padding-left: 20px;
+  border: 2px solid #eee;
+}
+.product-price {
+  position: absolute;
+  background: #4885ed;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 7px;
+  margin-top: 50px;
+  margin-left: -75px;
+  box-shadow: -10px 20px 15px -10px rgba(72, 133, 237, 0.2);
+}
+.product-price b {
+  margin-left: 5px;
+}
+
+

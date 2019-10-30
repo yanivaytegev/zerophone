@@ -1,0 +1,292 @@
+
+
+.testbox {
+    /* margin: 20px auto; */
+    margin-top: 6%;
+    width: 343px; 
+  }
+
+  h3{
+    color : #648392
+  }
+
+.top-hotels{
+	padding:50px 60px;
+	max-width:100%;
+	margin:0 auto;
+}
+.top-hotels  > div{max-width:1300px;margin:0 auto; }
+.top-hotels a{padding:0 15px;}
+.top-hotels a .destination-name{ text-align: center;}
+.top-hotels .holidays-item-image img{width:100%;height:auto;}
+.top-hotels .holidays-item{box-shadow:0 0px 2px 0 rgba(0, 0, 0, 0.2);width:300px;}
+.top-hotels .holidays-item:hover{box-shadow:0 0 25px 0 rgba(0, 0, 0, 0.24);}
+.top-hotels .holidays-item label{padding:15px 0;margin:0;font-size:16px;line-height:23px;}
+.top-hotels .ai-trp-rating p{font-size:16px; margin-left: 18px;}
+.top-hotels .deals-price{line-height:normal;}
+.top-hotels .tth-price{font-size:24px;margin-right:5px;}
+.top-hotels .tth-price .tth-pp{left:-4px;font-size:11px;font-weight:normal;}
+.top-hotels .ai-trp-rating .view-deal{padding:8px 10px;font-size:15px;margin-top:5px;background-color:turquoise;}
+
+@media(max-width:767px){
+	.top-hotels .tending-deal-heading{margin:0 0 15px;padding:0 20px;}
+	.top-hotels .tending-deal-heading h2{font-size:20px;}
+	.top-hotels a{display:block !important;width:223px;padding:0 !important;margin:0 0 20px;}
+	.top-hotels a .holidays-item{width:100%;padding:0;}
+	.top-hotels a .destination-name{ text-align: center;}
+	.top-hotels a .multi-hotel-row{min-height:250px;}
+	.top-hotels a .ai-trp-rating .float-left{max-width:80px;}
+	.top-hotels .ai-trp-rating .view-deal{padding:4px 2px 4px 0px;text-align:center;margin-top:15px;display: block;}
+}
+
+
+.price-now{
+  margin-left: 195px;
+
+}
+.price-now span {
+  font-size:32px;
+}
+
+.price-small {
+    font-size: 18px !important;
+    position: relative;
+    top: -11px;
+    left: 2px;
+}
+
+.popup {  
+  position: fixed;  
+  width: 100%;  
+  height: 100%;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  margin: auto;  
+  background-color: rgba(0,0,0, 0.5); 
+  z-index: 1000; 
+}  
+.popup\_inner {  
+  position: absolute;  
+  left: 25%;  
+  right: 25%;  
+  top: 25%;  
+  bottom: 25%;  
+  margin: auto;  
+  border-radius: 20px;  
+  background: white;  
+}
+
+
+
+
+
+
+.card {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgba(0, 0, 0, 0.3);
+}
+.card-head {
+  position: relative;
+  height: 252px;
+  background: #fa782e;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #d7d7d7 8%, #eee9e9 83%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #d7d7d7 8%, #eee9e9 83%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #d7d7d7 8%, #eee9e9 83%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#d7d7d7", endColorstr="#eee9e9", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border-radius: 25px 25px 0 0;
+}
+.card-logo {
+  height: 17%;
+  width: 30%;
+  margin: 20px;
+}
+.product-img {
+  position: absolute;
+  height: 270px;
+  width: 240px;
+  left: 0;
+  margin-top: 16px;
+  margin-left: 130px;
+}
+.product-detail {
+  padding: 0 20px;
+  font-size: 10px;
+  color: #646363;
+  font-style: italic;
+  position: absolute;
+  top: 111px;
+  left: 86px;
+}
+.product-desc{
+  position: absolute;
+  margin-left: 103px;
+  margin-top: 24px;
+}
+.product-detail h2 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: px;
+  text-transform: uppercase;
+}
+.back-text {
+  display: inline-block;
+  font-size: 124px;
+  font-weight: 900;
+  margin-left: -7px;
+  margin-top: -15px;
+  opacity: 0.1;
+}
+.card-body {
+  height: 255px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+}
+.product-title {
+  padding: 20px 20px 5px 20px;
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.product-title b {
+  font-weight: 900;
+  letter-spacing: 0px;
+}
+.badge {
+  position: relative;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  background: #4885ed;
+  padding: 2px 5px;
+  border-radius: 4px;
+  top: -2px;
+  margin-left: 5px;
+}
+.product-caption {
+  display: block;
+  padding: 0 20px;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.product-rating {
+  padding: 0 20px;
+  font-size: 11px;
+}
+.product-rating i.yellow {
+  color: #f4c20d;
+}
+.product-rating i.ash {
+  color: #acacab;
+}
+.product-size h4 {
+  font-size: 11px;
+  padding: 0 21px;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.ul-size {
+  margin-left: 15px;
+}
+.ul-size li {
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+}
+.ul-size li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 23px;
+  color: #000;
+}
+.ul-size li a.active {
+  background: #f35e3d;
+  color: #fff;
+}
+.product-size:before, .product-size:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.product-price {
+  position: absolute;
+  background: #4885ed;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  color: #fff;
+  border-radius: 7px;
+  margin-left: 244px;
+  margin-top: 116px;
+  box-shadow: -10px 20px 15px -10px rgba(72, 133, 237, 0.2);
+}
+.product-price b {
+  margin-left: 5px;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #1e62d0));
+	background:-moz-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-webkit-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-o-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:-ms-linear-gradient(top, #3d94f6 5%, #1e62d0 100%);
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0',GradientType=0);
+	background-color:#3d94f6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #337fed;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #1570cd;
+  position: absolute;
+  margin-top: 179px;
+  margin-left: 112px;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #1e62d0), color-stop(1, #3d94f6));
+	background:-moz-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-webkit-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-o-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:-ms-linear-gradient(top, #1e62d0 5%, #3d94f6 100%);
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6',GradientType=0);
+	background-color:#1e62d0;
+}
+
+
+        
+
+
+
+
